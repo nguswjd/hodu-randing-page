@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+  list-style: none;
+  
+  color: #29363D;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.sr-only {
+  display: none !important;
+}
+
+input,
+button {
+  cursor: pointer;
+}
