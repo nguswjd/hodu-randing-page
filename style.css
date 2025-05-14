@@ -1,6 +1,7 @@
 /* body {
 } */
 
+/* header */
 header {
   background-color: #F2E9D8;
   /* width: 1920px;
@@ -69,6 +70,19 @@ header section:last-child {
 
 .text-box {
   width: 60%;
+}
+
+/* main */
+
+.blog-subscribe form img {
+  width: 24px;
+  height: 24px;
+}
+
+main section:last-child > img {
+  height: 340px;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 700px) {
