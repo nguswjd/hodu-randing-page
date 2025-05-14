@@ -12,8 +12,13 @@ header section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 
   margin: 0 10%;
+}
+
+.tab-menu{
+  display: none;
 }
 
 header section:first-child{  
@@ -55,7 +60,8 @@ header section:last-child {
   gap: 40px;
 }
 
-.page-description p{
+.page-description p,
+.page-description p > span{
   font-size: 48px;
   font-weight: 700;
   line-height: 100%;
@@ -65,7 +71,72 @@ header section:last-child {
   width: 60%;
 }
 
+@media (max-width: 700px) {
+  header {
+    position: relative;
+  }
 
+  header section:first-child{  
+    padding: 20px 0 0;
+  }
+
+  .logo img {
+    width: 92px;
+  }
+
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3),
+  nav ul li:nth-child(4),
+  nav ul li:nth-child(5) {
+    /* js로 class sr-only 추가 구현 만약 li첫 번째 요소를 눌렸을 때 sr-only 풀리고 첫번째 요소에 class sr-only 추가 구현 애니메이션으로 우측에서 좌측으로 슬라이드 하면서 열리는 구조 */
+    display: none;
+  }
+
+  br {
+    display: none;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+
+  /* nav {
+    position: absolute;
+    background-color: #263140;
+  } */
+
+  .tab-menu {
+    display: block;
+  }
+
+  header section:last-child {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-description {
+    align-items: center;
+  }
+
+  .page-description p,
+  .page-description p > span {
+    font-size: 24px;
+  }
+
+  .line-break {
+    display: block;
+  }
+
+  .page-description span {
+    font-size: 14px;
+  }
+
+  .download-link a {
+    padding: 11px 24px;
+    font-size: 14px;
+  }
+}
 
 
 
