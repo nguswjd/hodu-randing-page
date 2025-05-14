@@ -165,6 +165,12 @@ main section:last-child {
   width: 65vw;
   border-radius: 30px;
   padding: 50px 58px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .blog-subscribe h2,
@@ -181,6 +187,7 @@ main section:last-child {
 .blog-subscribe span {
   font-size: 14px;
   display: block;
+  margin-top: 20px;
 }
 
 .blog-subscribe form {
@@ -220,10 +227,16 @@ main section:last-child > img {
   object-fit: cover;
 }
 
-.blog-subscribe {
+footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-top: -80px;
+  height: 160px;
+}
+
+.footer-logo img {
+  width: 226px;
 }
 
 .top-btn {
@@ -239,6 +252,26 @@ main section:last-child > img {
   height: 50px;
 }
 
+.quick-url {
+  display: flex;
+  gap: 20px;
+}
+
+.quick-url li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #F29D52;
+}
+
+.quick-url li a img {
+  width: 24px;
+  height: 24px;
+}
 
 @media (max-width: 700px) {
   header {
