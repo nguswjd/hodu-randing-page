@@ -16,6 +16,8 @@
   font-size: 16px;
   font-weight: 400;
   font-family: 'Spoqa Han Sans Neo', sans-serif;
+
+  box-sizing: border-box;
 }
 
 .sr-only {
