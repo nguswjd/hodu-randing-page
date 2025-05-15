@@ -2,7 +2,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 80px;
-
   position: relative;
 }
 
@@ -33,13 +32,13 @@ header section:first-child{
   padding: 30px 0 0;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
 
-nav ul li a {
+header nav ul li a {
   line-height: 50px;
 }
 
@@ -268,11 +267,13 @@ footer {
 
   width: 42px;
   height: 42px;
+
   border-radius: 50%;
   background-color: #F29D52;
 }
 
 .quick-url li a img {
+  display: block;
   width: 24px;
   height: 24px;
 }
@@ -328,6 +329,10 @@ footer {
   width: 20%;
 }
 
+footer nav {
+  display: none;
+}
+
 @media (max-width: 800px) {
   br {
     display: none;
@@ -356,10 +361,10 @@ footer {
     width: 92px;
   }
 
-  nav ul li:nth-child(2),
-  nav ul li:nth-child(3),
-  nav ul li:nth-child(4),
-  nav ul li:nth-child(5) {
+  header nav ul li:nth-child(2),
+  header nav ul li:nth-child(3),
+  header nav ul li:nth-child(4),
+  header nav ul li:nth-child(5) {
     /* js로 class sr-only 추가 구현 만약 li첫 번째 요소를 눌렸을 때 sr-only 풀리고 첫번째 요소에 class sr-only 추가 구현 애니메이션으로 우측에서 좌측으로 슬라이드 하면서 열리는 구조 */
     display: none;
   }
@@ -482,7 +487,7 @@ footer {
     width: 100%;
     height: 40px;
 
-    padding: 0 5px 0 0;
+    padding: 0 5px 0 16px;
     margin-top: 20px;
 
     display: flex;
@@ -494,7 +499,6 @@ footer {
 
   .user-address label {
     gap: 14px;
-    padding: 0 0 0 11px;
   }
   
   .user-address label img {
@@ -511,59 +515,74 @@ footer {
     top: 60px;
   }
 
-/* dfdsafdfasefasefa */
-  main section:last-child > img {
-    height: 340px;
-    width: 100vw;
-    object-fit: cover;
+  /* footer */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: -80px;
+    height: 178px;
+    padding: 30px 20px;
   }
 
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -80px;
-    height: 160px;
+  footer h2 {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+  }
+
+  footer ul {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+  }
+
+  footer nav {
+    width: 120px;
+    grid-column: 2;
+    grid-row: 1;
+    grid-row: 1 / span 2;
+    justify-self: end;
   }
 
   .footer-logo img {
-    width: 226px;
-  }
-
-  .top-btn {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 24px;
-    background-color: unset;
+    width: 112px;
   }
 
   .top-btn img{
-    width: 50px;
-    height: 50px;
+    display: none;
   }
 
   .quick-url {
-    display: flex;
-    gap: 20px;
+    gap: 16px;
   }
 
   .quick-url li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background-color: #F29D52;
+    width: 32px;
+    height: 32px;
   }
 
   .quick-url li a img {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
   }
 
+  footer nav {
+    display: block;
+  }
+
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 16px;
+  }
+
+  footer nav ul li a {
+    color: #767676;
+  }
+
+  /* 구독 클릭시 모달 */
   .modal {
     position: fixed;
     background-color: #00000040;
@@ -614,52 +633,6 @@ footer {
   .modal-box img {
     width: 20%;
   }
-
-  /* .page-description {
-    align-items: center;
-  }
-
-  .page-description p,
-  .page-description p > span {
-    font-size: 24px;
-  }
-
-  .page-description span {
-    font-size: 14px;
-  }
-
-  .download-link a {
-    padding: 11px 24px;
-    font-size: 14px;
-  }
-
-  .blog-subscribe {
-
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
-  }
-
-  .blog-subscribe h2,
-  .blog-subscribe h2 span:first-child {
-    font-size: 24px;
-    width: 100%;
-  }
-
-  .blog-subscribe span {
-    width: 100%;
-  }
-
-  .user-address {
-    width: 100%;
-  }
-
-  .blog-subscribe button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 30px 32px;
-  } */
 }
 
 
