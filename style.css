@@ -44,7 +44,8 @@ header nav ul li a {
 
 .download-link a,
 .hodu-more-ad a,
-.blog-subscribe form button {
+.blog-subscribe form button,
+.open-tabMenu nav ul li:last-child a {
   padding: 15px 29px;
   border-radius: 40px;
 
@@ -590,7 +591,7 @@ footer nav {
     border-radius: 30px 30px 0 0;
     background-size: cover;
     justify-content: end;
-    
+
     transform: translateY(100%);
 
     gap: 10px;
@@ -609,7 +610,7 @@ footer nav {
     position: absolute;
     background-color: #F2E9D8;
     height: 100px;
-    width: 300px;
+    width: 100%;
     border-radius: 0 0 30px 30px;
 
     bottom: -50%;
@@ -623,6 +624,43 @@ footer nav {
     font-size: 14px;
     padding: 11px 24px;
   }
+
+  .open-tabMenu {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .open-tabMenu div {
+    width: 70%;
+    height: 100%;
+    background-color: #263140;
+  }
+
+  .open-tabMenu div a img {
+    margin: 20px;
+  }
+
+  .open-tabMenu div nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px;
+  }
+
+  .open-tabMenu div nav ul li:last-child {
+    margin-top: 50px;
+  }
+
+  .open-tabMenu div nav ul li a{
+    color: #fff;
+    font-weight: 700;
+  }
+
 }
 
 
