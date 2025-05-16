@@ -1,23 +1,12 @@
-@font-face {
-  font-family: 'Spoqa Han Sans Neo';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
 
   text-decoration: none;
   list-style: none;
-  
   color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Spoqa Han Sans Neo', sans-serif;
-
-  box-sizing: border-box;
+  
+  font-style: normal;
 }
 
 .sr-only {
@@ -32,7 +21,14 @@
 input,
 button {
   cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
   border: none;
-  outline: none;
 }
+
+input:focus {
+  cursor: text;
+}
+
 

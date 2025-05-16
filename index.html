@@ -12,7 +12,7 @@
     <header>
       <section class="header-menu">
         <h1>
-          <img src="image/Logo-fin.svg" alt="hodu페이지 로고" title="HODU">
+          <img src="image/Logo-fin.svg" alt="사이트 로고" title="HODU">
         </h1>
 
         <nav>
@@ -35,14 +35,14 @@
               <a href="#">Support</a>
             </li>
   
-            <li class="download-link">
-              <a href="#">Download</a>
+            <li>
+              <a href="#" class="Orange-btn">Download</a>
             </li>
           </ul>
         </nav>
       </section>
 
-      <section class="description-section">
+      <section class="description-wrap">
         <h2 class="sr-only">호두페이지 설명</h2>
         <div class="page-description">
           <p>
@@ -51,12 +51,13 @@
           
           <div class="text-box">
             <span>
-              Lorem Ipsum is simply  dummy text <span class="line-break">of the printing and typesetting industry.</span><br>Lorem Ipsum has been the industry's<span class="line-break"> standard dummy text ever since the 1500s,</span> when an unknown
+              Lorem Ipsum is simply  dummy text of the printing and typesetting industry.<br>
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
             </span>
           </div>
   
-          <div class="download-link">
-              <a href="#">Download</a>
+          <div>
+              <a href="#" class="Orange-btn">Download</a>
           </div>
         </div>
         <img src="image/고양이.png" alt="얼굴에 박스가 씌워진 앉아있는 고양이 hodu">
@@ -64,27 +65,26 @@
     </header>
 
     <main>
-      <section class="hodu-intro">
+      <section class="hodu-intro"> 
         <h2 class="sr-only">hodu 소개 페이지</h2>
         <img src="image/img_4.png" alt="누워있는 고양이 호두">
-        <div>
+        <div class="intro-textbox">
           <p>
-          Lorem Ipsum is simply<br> <span class="line-break">dummy text of the printing</span> and dummy text
+          Lorem Ipsum is simply dummy text of the printing and dummy text
           </p>
           <span>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           </span>
         </div>
-        
       </section>
       
       <section class="hodu-daily">
         <h2 class="sr-only">hodu의 일상</h2>
         <p>dummy text of the printing and dummy</p>
         <span>
-          Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+          Lorem Ipsum is simply <span class="">dummy text</span> of the printing and typesetting industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
         </span>
-        <ul>
+        <ul class="img-container">
           <li>
             <img src="image/img_1.png" alt="캣타워에 앉아있는 고양이 호두">
           </li>
@@ -99,42 +99,50 @@
         </ul>
       </section>
       
+      
       <section class="hodu-more-ad">
-        <div>
-          <h2 class="sr-only">hodu에 대해 더 알아보기</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Ipsum is simply dummy text of the printing and typesetting industry. 
-          </p>
-        </div>
+        <h2 class="sr-only">hodu에 대해 더 알아보기</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown <span class="line-break">Ipsum is simply dummy text of the printing and typesetting industry.</span> 
+        </p>
 
-        <ul>
-          <li>
-            <a href="#">Learn&nbsp;More</a>
-          </li>
-        </ul>
+        <a href="#" class="Orange-btn">Learn&nbsp;More</a>
       </section>
       
-      <section>
-        <div class="blog-subscribe">
+      <section class="subscribe-wrap">
+        <div class="subscribe-content">
           <h2>Subscribe to our <span class="line-break">Blog post</span>
-            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</span>
           </h2>
+          <span>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text
+          </span>
           
           <form class="user-address">
-            <label for="e-mail">
+            <label for="e-mail" class="sr-only">이메일 주소</label>
+            <div class="input-wrap">
               <img src="image/mail.svg" alt="이메일 아이콘">
               <input type="text" id="e-mail" name="e-mail" placeholder="Enter your e-mail address">
-            </label>
-            <button type="submit">Subscribe</button>
+            </div>
+              <button>Subscribe</button>
           </form>
         </div>
         
         <img src="image/img_5.png" alt="고양이 호두가 위를 보는 사진">
-        <button class="top-btn">
-          <img src="image/scroll-top-btn.png" alt="">
-        </button>
       </section>
+
+      <button class="top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <g clip-path="url(#clip0_6087_2800)">
+            <path d="M12.35 25.6833L20 18.0499L27.65 25.6833L30 23.3333L20 13.3333L10 23.3333L12.35 25.6833Z">
+          </g>
+          <defs>
+            <clipPath id="clip0_6087_2800">
+              <rect width="40" height="40" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
     </main>
 
     <footer>
@@ -187,10 +195,10 @@
           </li>
         </ul>
       </nav>
+      
     </footer>
 
     <section class="modal sr-only">
-      <!-- <img src="image/modal_background.png" alt="고양이 호두 블로그 구독 시 나타나는 모달 창" title="Thank you!"> -->
       <div class="modal-box">
         <img src="image/modal_cat.png" alt="고양이 호두의 얼굴">
         <h2>Thank you!</h2>
@@ -221,7 +229,7 @@
               <a href="#">Support</a>
             </li>
 
-            <li>
+            <li class="download-link">
               <a href="#">Download</a>
             </li>
           </ul>
