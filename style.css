@@ -36,29 +36,23 @@ header section {
   align-items: center;
 }
 
-.tab-menu{
+.mobile-tab-menu {
   display: none;
 }
 
-header section:first-child{  
+.header-menu {  
   padding: 30px 0 0;
 }
 
-header nav ul {
+.header-menu nav ul {
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
 
-header nav ul li a {
-  line-height: 50px;
-}
-
-header section:last-child img {
-  max-width: 415px;
-  min-width: 260px;
-  width: 40%;
+.description-section img {
   margin-top: 32px;
+  width: clamp(260px, 40%, 415px);
 }
 
 .page-description {
@@ -71,11 +65,14 @@ header section:last-child img {
 .page-description p > span{
   font-size: clamp(24px, 3vw ,48px);
   font-weight: 700;
-  line-height: 100%;
 }
 
 .text-box {
   width: 60%;
+}
+
+.download-link {
+  
 }
 
 /* main */
@@ -387,7 +384,6 @@ footer nav {
   header nav ul li:nth-child(3),
   header nav ul li:nth-child(4),
   header nav ul li:nth-child(5) {
-    /* js로 class sr-only 추가 구현 만약 li첫 번째 요소를 눌렸을 때 sr-only 풀리고 첫번째 요소에 class sr-only 추가 구현 애니메이션으로 우측에서 좌측으로 슬라이드 하면서 열리는 구조 */
     display: none;
   }
 
@@ -407,7 +403,7 @@ footer nav {
     display: block;
   }
 
-  .tab-menu {
+  .mobile-tab-menu {
     display: block;
   }
 
