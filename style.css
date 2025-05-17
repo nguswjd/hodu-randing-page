@@ -2,8 +2,6 @@
 
 body {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-  font-size: 16px;
-  font-weight: 400;
   letter-spacing: 0.06em;
 }
 
@@ -13,7 +11,7 @@ header section,
 .hodu-more-ad,
 .subscribe-content,
 footer {
-  margin: 0 clamp(100px, 17%, 320px);
+  margin: 0 15%;
 }
 
 .img-container {
@@ -95,7 +93,8 @@ main,
   gap: clamp(20px, 3vw ,40px);
 }
 
-.page-description p {
+.page-description p,
+.page-description p span {
   width: 100%;
   font-size: clamp(30px, 4vw, 48px);
   font-weight: 700;
@@ -124,7 +123,7 @@ main {
 }
 
 .intro-textbox {
-  width: 40%;  
+  width: 41%;  
 }
 
 .intro-textbox p,
@@ -156,8 +155,9 @@ main {
   color: #D97652;
 }
 
-.hodu-daily span span{
+.orange-text {
   color: #D97652;
+  font-weight: 700;
 }
 
 .img-container {
@@ -179,7 +179,7 @@ main {
 }
 
 .hodu-more-ad p {
-  width: 60%;
+  width: 58%;
 }
 
 /* main 4 section */
@@ -224,6 +224,7 @@ main {
 .subscribe-content h2,
 .subscribe-content h2 > span {
   font-size: 36px;
+  font-weight: 700;
 }
 
 .subscribe-content > span {
@@ -379,8 +380,13 @@ footer > nav li a {
     display: inline-block;
   }
 
+  br {
+    display: none;
+  }
+
   body {
     font-size: 14px;
+    letter-spacing: 0;
   }
 
   header section{
@@ -407,6 +413,7 @@ footer > nav li a {
   .modal-box > span a,
   .download-link a{
     padding: 11px 24px;
+    font-size: 14px;
   }
 
   .line-break {
@@ -443,13 +450,13 @@ footer > nav li a {
     gap: 30px;
   }
   
-  .page-description p {
-    width: 100%;
+  .page-description p,
+  .page-description p span {
     font-size: 24px;
   }
   
   .text-box {
-    width: 85%;
+    width: 100%;
   }
   
 /* main 1 section */
@@ -485,6 +492,7 @@ footer > nav li a {
 /* main 2 section */
   .hodu-daily {
     gap: 30px;
+    width: 100%;
   }
 
   .hodu-daily p{
@@ -507,6 +515,10 @@ footer > nav li a {
 
   .hodu-more-ad p {
     width: 100%;
+  }
+
+  #e-mail {
+    font-size: 12px;
   }
 
 /* main 4 section */
