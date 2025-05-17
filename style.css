@@ -18,11 +18,7 @@ footer {
   margin-left: clamp(100px, 17%, 320px);
 }
 
-.Orange-btn,
-.blog-subscribe form button,
-.user-address button,
-.modal-box > span a,
-.download-link a{
+.Orange-btn {
   display: inline-block;
 
   padding: 15px 30px;
@@ -402,11 +398,7 @@ footer > nav li a {
   }
 
 
-  .Orange-btn,
-  .blog-subscribe form button,
-  .user-address button,
-  .modal-box > span a,
-  .download-link a{
+  .Orange-btn {
     padding: 11px 24px;
     font-size: 14px;
   }
