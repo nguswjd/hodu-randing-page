@@ -38,7 +38,6 @@ header {
   display: inline;
 }
 
-/* ----------------------------- */
 .header-menu,
 .description-wrap,
 .hodu-intro,
@@ -59,9 +58,7 @@ main,
   display: flex;
   flex-direction: column;
 }
-/* ----------------------------- */
 
-/* header 1 section */
 .header-menu {
   flex-direction: row;
 
@@ -80,7 +77,6 @@ main,
   display: none;
 }
 
-/* header 2 section */
 .description-wrap img {
   width: clamp(260px, 40%, 415px);
 }
@@ -100,7 +96,6 @@ main,
   width: 60%;
 }
 
-/* main 1 section */
 main {
   position: relative;
   gap: 90px;
@@ -132,7 +127,6 @@ main {
   padding-bottom: 30px;
 }
 
-/* main 2 section */
 .hodu-daily {
   overflow: hidden;
   gap: 40px;
@@ -168,7 +162,6 @@ main {
   margin-top: 30px;
 }
 
-/* main 3 section */
 .hodu-more-ad {
   justify-content: center;
   gap: 52px;
@@ -178,7 +171,6 @@ main {
   width: 60%;
 }
 
-/* main 4 section */
 .subscribe-wrap {
   position: relative;
   margin-bottom: 240px;
@@ -283,7 +275,6 @@ main {
   fill: #767676;
 }
 
-/* footer */
 footer {
   height: 160px;
 }
@@ -322,7 +313,6 @@ footer > nav li a {
   font-size: 14px;
 }
 
-/* modal */
 .modal {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.25);
@@ -363,8 +353,6 @@ footer > nav li a {
 .modal-box p {
   font-size: 14px;
 }
-
-/* -------------------------------------------- */
 
 @media (max-width: 800px) {
   .line-break {
@@ -407,7 +395,6 @@ footer > nav li a {
     display: block;
   }
 
-/* header 1 section */
   .header-menu {
     padding: 15px 0;
     margin-bottom: 40px;
@@ -421,7 +408,6 @@ footer > nav li a {
     display: block;
   }
 
-/* header 2 section */
   .description-wrap {
     flex-direction: column;
     text-align: center;
@@ -446,10 +432,8 @@ footer > nav li a {
     width: 100%;
   }
   
-/* main 1 section */
   main {
     gap: 50px;
-    /* gap: 60px; */
   }
 
   .hodu-intro {
@@ -476,7 +460,6 @@ footer > nav li a {
     padding-bottom: 20px;
   }
 
-/* main 2 section */
   .hodu-daily {
     gap: 30px;
     width: 100%;
@@ -493,7 +476,6 @@ footer > nav li a {
     margin-top: 10px;
   }
 
-/* main 3 section */
   .hodu-more-ad {
     flex-direction: column;
     align-items: end;
@@ -508,7 +490,6 @@ footer > nav li a {
     font-size: 12px;
   }
 
-/* main 4 section */
   .subscribe-wrap {
     margin-bottom: 200px;
   }
@@ -570,7 +551,6 @@ footer > nav li a {
     display: none;
   }
 
-/* footer */
   footer {
     height: 178px;
 
@@ -618,7 +598,6 @@ footer > nav li a {
     text-align: right;
   }
 
-  /* modal */
   .modal-box {
     gap: 0px;
     width: 55vw;
@@ -655,7 +634,6 @@ footer > nav li a {
     align-items: center;
   }
 
-/* tabmenu */
   .open-tabMenu {
     position: fixed;
     top: 0;
