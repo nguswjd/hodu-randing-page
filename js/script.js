@@ -19,6 +19,7 @@ let closeTabMenu = $('.open-tabMenu div > a');
 tabMenu.click(function(e){
   e.preventDefault();
   openTabMenu.removeClass('sr-only'); 
+
   setTimeout(function() {
     openTabMenu.addClass('active'); 
   }, 10);
@@ -27,6 +28,7 @@ tabMenu.click(function(e){
 closeTabMenu.click(function(e){
   e.preventDefault();
   openTabMenu.removeClass('active');
+  
   setTimeout(function() {
     openTabMenu.addClass('sr-only');
   }, 300);
