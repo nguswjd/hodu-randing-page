@@ -15,7 +15,7 @@ __HODU__ 는 귀여운 고양이 "hodu"를 테마로 한 랜딩 페이지입니�
 ## 화면 구성
 |header|
 |:---:|
-|<img src="readme-image/header.png" width: "450px;">|
+|<img src="readme-image/header.png" width = "450px;">|
 |상단에는 로고 및 nav 요소와 페이지의 주요 콘텐츠를 담는 영역입니다.|
 
 |main section 1|

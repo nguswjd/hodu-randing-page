@@ -459,12 +459,16 @@ footer > nav li a {
   }
 
   .intro-textbox {
-    width: 100%;  
+    width: 100%;
   }
 
   .intro-textbox p,
   .intro-textbox p span {
     font-size: 24px;
+  }
+
+  .intro-textbox > span {
+    font-size: 14px;
   }
 
   .intro-textbox p {
