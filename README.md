@@ -43,13 +43,13 @@ __HODU__ 는 귀여운 고양이 "hodu"를 테마로 한 랜딩 페이지입니�
 
 ## 프로젝트 구조
 📦hodu-randing-page  
-┣ 📂css
-┣ 📂image 
+┣ 📂css  
+┣ 📂image  
 ┃ ┣ 📜index.html  
 ┃ ┣ 📜style.html   
-┣ 📂js 
+┣ 📂js  
 ┃ ┣ 📜jquery.html  
-┃ ┣ 📜script.html 
+┃ ┣ 📜script.html  
 ┣ 📂readme-image    
 ┣ 📜index.html    
 ┗ 📜README.md
