@@ -4,6 +4,14 @@ let closeModal = $('.open-tabMenu');
 
 subscribe.click(function(e){
   e.preventDefault();
+
+  let email = $('#e-mail').val();
+
+  if (!email.includes('@') || !email.includes('.')) {
+    alert('이메일 형식을 확인하세요!');
+    return;
+  }
+
   modal.removeClass('sr-only');
 });
 
