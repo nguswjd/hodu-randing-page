@@ -21,22 +21,22 @@ __HODU__ 는 귀여운 고양이 "hodu"를 테마로 한 랜딩 페이지입니�
 |main section 1|
 |:---:|
 |<img src="readme-image/main-section1.png" width = "450px;">|
-|main 섹션에 처음으로 보이는 부분으로 웹페이지의 주제를 담는 영역입니다.|
+|main 섹션에 처음으로 보이는 부분으로 <br> 웹페이지의 주제를 담는 영역입니다.|
 
 |main section 2|
 |:---:|
 |<img src="readme-image/main-section2.png" width = "450px;">|
-|main 섹션 중간 영역으로 웹페이지의 주요 콘텐츠를 담는 영역입니다. 이미지는 크기가 작아지면서 좌우 스크롤을 할 수있습니다.|
+|main 섹션 중간 영역으로 웹페이지의 주요 콘텐츠를 담는 영역입니다. <br> 이미지는 크기가 작아지면서 좌우 스크롤을 할 수있습니다.|
 
 |main section 3 + 4|
 |:---:|
 |<img src="readme-image/main-section3.png" width = "450px;">|
-|main 섹션 하단 부분으로 페이지 더알아보기 링크와 관리자의 blog를 구독할 수 있게 연결할 수 있는 링크창이 있습니다.|
+|main 섹션 하단 부분으로 페이지 더알아보기 링크와 <br> 관리자의 blog를 구독할 수 있게 연결할 수 있는 링크창이 있습니다.|
 
 |footer|
 |:---:|
 |<img src="readme-image/footer.png" width = "450px;">|
-|하단 푸터로 페이지의 로고와 바로가기 링크, 모바일 화면에서는 추가적인 네비게이션이 있습니다.|
+|하단 푸터로 페이지의 로고와 바로가기 링크, <br> 모바일 화면에서는 추가적인 네비게이션이 있습니다.|
 
 <br>
 
