@@ -28,10 +28,18 @@ tabMenu.click(function(e){
 closeTabMenu.click(function(e){
   e.preventDefault();
   openTabMenu.removeClass('active');
-  
+
   setTimeout(function() {
     openTabMenu.addClass('sr-only');
   }, 300);
 });
 
+let topBtn = $('.top-btn');
 
+topBtn.click(function(e){
+  e.preventDefault();
+  
+  $('html').animate({ 
+    scrollTop: 0 
+  }, 500);
+});
