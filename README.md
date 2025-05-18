@@ -84,7 +84,7 @@ __HODU__ 는 귀여운 고양이 "hodu"를 테마로 한 랜딩 페이지입니�
 ## jQuery
 |모바일 환경 Tabmenu|
 |:---:|
-|<img src="readme-image/tabMenu.gif" width = "450px">|
+|<img src="readme-image/tapMenu.gif" width = "450px">|
 |모바일 환경에서 tab 메뉴를 열고 닫을 때 <br> `sr-only`클래스를 추가 제거 하여 열고 닫는 버튼을 구현하였습니다.|
 
 |이메일 입력, 모달창|
