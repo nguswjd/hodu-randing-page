@@ -21,6 +21,10 @@
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 input,
 button {
   cursor: pointer;

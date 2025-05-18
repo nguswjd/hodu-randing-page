@@ -12,12 +12,12 @@ subscribe.click(function(e){
     return;
   }
 
-  modal.removeClass('sr-only');
+  modal.removeClass('hidden');
 });
 
 closeModal.click(function(e){
   e.preventDefault();
-  modal.addClass('sr-only');
+  modal.addClass('hidden');
 });
 
 let tabMenu = $('.mobile-tab-menu');
