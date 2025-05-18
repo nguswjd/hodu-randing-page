@@ -13,10 +13,30 @@ __HODU__ 는 귀여운 고양이 "hodu"를 테마로 한 랜딩 페이지입니�
 ---
 
 ## 화면 구성
-||
+|header|
 |:---:|
-|<img src="">|
-||
+|<img src="readme-image/header.png" width: "450px;">|
+|상단에는 로고 및 nav 요소와 페이지의 주요 콘텐츠를 담는 영역입니다.|
+
+|main section 1|
+|:---:|
+|<img src="readme-image/main-section1.png" width = "450px;">|
+|main 섹션에 처음으로 보이는 부분으로 웹페이지의 주제를 담는 영역입니다.|
+
+|main section 2|
+|:---:|
+|<img src="readme-image/main-section2.png" width = "450px;">|
+|main 섹션 중간 영역으로 웹페이지의 주요 콘텐츠를 담는 영역입니다. 이미지는 크기가 작아지면서 좌우 스크롤을 할 수있습니다.|
+
+|main section 3 + 4|
+|:---:|
+|<img src="readme-image/main-section3.png" width = "450px;">|
+|main 섹션 하단 부분으로 페이지 더알아보기 링크와 관리자의 blog를 구독할 수 있게 연결할 수 있는 링크창이 있습니다.|
+
+|footer|
+|:---:|
+|<img src="readme-image/footer.png" width = "450px;">|
+|하단 푸터로 페이지의 로고와 바로가기 링크, 모바일 화면에서는 추가적인 네비게이션이 있습니다.|
 
 <br>
 
@@ -57,49 +77,5 @@ __HODU__ 는 귀여운 고양이 "hodu"를 테마로 한 랜딩 페이지입니�
 <br>
 
 ---
-## 개선 예정 사항
-- `hodu-daily`의 `img-container`가 좌우 스크롤시 움직이게 작동하는 js 구현
-- 
-
----
-
-## 📂image
-- `Logo-HODU.svg`
-  : 상단에 우측에 보이는 **'HODU' 로고** 이미지입니다.
-- `menu.svg`
-  : 800px 이하의 모바일 화면에서의 상단에 좌측에 보이는 **tab menu 아이콘** 이미지입니다.
-- `box_cat.png`
-  : 상단에 보이는 **얼굴에 박스를 쓴 고양이**  이미지입니다.
-- `hodu_lying_down.png`
-  : 메인 섹션 **누워있는 고양이** 이미지입니다.
-- `hodu_cat_tower.png`
-  : 메인 섹션 이미지 컨테이너 안에있는 **캣타워 위의 고양이** 첫번째 이미지입니다.
-- `hodu_wall_watching.png`
-  : 메인 섹션 이미지 컨테이너 안에있는 **벽을 바라보는 고양이** 두번째 이미지입니다.
-- `hodu_front_face.png`
-  : 메인 섹션 이미지 컨테이너 안에있는 **정면을 바라보는 고양이** 두번째 이미지입니다.
-- `mail.svg`
-  : 이메일을 입력하는 창 좌측에 들어간 **이메일 아이콘** 이미지입니다.
-- `hodu_looking_up.png`
-  : 메인 하단에 보이는 **위를 바라보는 고양이** 이미지입니다.
-- `blog.png`
-  : 하단 푸터 네비의 **blog 바로가기 아이콘** 이미지입니다.
-- `instagram.png`
-  : 하단 푸터 네비의 **instagram 바로가기 아이콘** 이미지입니다.
-- `facebook.png`
-  : 하단 푸터 네비의 **facebook 바로가기 아이콘** 이미지입니다.
-- `youtube.png`
-  : 하단 푸터 네비의 **youtube 바로가기 아이콘** 이미지입니다.
-- `modal_cat.png`
-  : 구독 버튼을 눌렀을 때, 모달이 뜨는데 모달 안에 보여지는 **모달창 속 고양이 얼굴 이미지** 이미지입니다.
-- `arrow-right.svg`
-  : 800px 이하의 모바일 창에서 메뉴가 열려있을 떄 메뉴를 닫을 때 사용하는 **메뉴 닫기 아이콘** 이미지입니다.
-
----
-
-## 주요 클래스 및 ID 설명
-| 이름            | 종류  | 설명 |
-|----------------|-------|------|
-| `.header-menu` | class | 헤더 상단 메뉴 영역 |
-| `.mobile-tab-menu` | class | 모바일 탭 메뉴 아이콘 버튼 |
-| `.Orange-btn` | class | 버튼 스타일 (download, subscribe, learn more) |
+## 기술적 이슈와 해결 과정
+- `img-container`에 스크롤를 구현하던 중, 상위 부모 요소에 `align-items: center;` 속성을 적용하면  `img-container`에 설정한 `overflow: auto`가 동작하지 않는 문제가 발생했습니다. 이를 해결하기 위해 `align-items: center;`를 사용하여 pc 환경에서 화면 기준 가운데 정렬이 적용되게 구현하였고, `img-container`의 총 너비가 화면을 초과하기 전 미디어 쿼리를 이용하여 `align-items: center;`값을 `unset`으로 바꿔주어 `overflow: auto`로 좌우간 스크롤이 적용될 수 있게 해결하였습니다.
