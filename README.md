@@ -1,58 +1,69 @@
 # hodu-randing-page
 __HODU__ 는 귀여운 고양이 "hodu"를 테마로 한 랜딩 페이지입니다. HTML, CSS로 구성되어 있으며 내용 측면에서는 수정이 필요합니다.
 
----
-
-## 프로젝트 구조
-📦 hodu-randing-page
-┣ 📂image
-┃ ┣ 📜Logo-HODU.svg
-┃ ┣ 📜arrow-right.svg
-┃ ┣ 📜blog.png
-┃ ┣ 📜box_cat.png
-┃ ┣ 📜facebook.png
-┃ ┣ 📜hodu_cat_tower.png
-┃ ┣ 📜hodu_front_face.png
-┃ ┣ 📜hodu_looking_up.png
-┃ ┣ 📜hodu_lying_down.png
-┃ ┣ 📜hodu_wall_watching.png
-┃ ┣ 📜instagram.png
-┃ ┣ 📜mail.svg
-┃ ┣ 📜menu.svg
-┃ ┣ 📜modal_background.png
-┃ ┣ 📜modal_cat.png
-┃ ┗ 📜youtube.png
-┣ 📜README.md
-┣ 📜index.html
-┣ 📜reset.css
-┗ 📜style.css
-
----
-
-## 주요 기능
-
+<br>
 
 ---
 
 ## 배포 URL
 [https://nguswjd.github.io/hodu-randing-page/]
 
----
-
-## 사용 기술
-- HTML
-- CSS
-- 미디어 쿼리를 이용한 반응형 레이아웃
-- 접근성 고려 ('.sr-only' 클래스를 활용한 스크린리더 지원)
+<br>
 
 ---
 
+## 화면 구성
+||
+|:---:|
+|<img src="">|
+||
+
+<br>
+
+
+---
+
+
+## 기술 스택
+### Front-end
+<div>
+  <img src="readme-image/HTMLCSS.png" width="80">
+  <img src="readme-image/jQuery.png" width="80">
+</div>
+
+### Tools
+<div>
+  <img src="readme-image/Github.png" width="80">
+  <img src="readme-image/Notion.png" width="80">
+</div>
+
+<br>
+
+---
+
+## 프로젝트 구조
+📦hodu-randing-page  
+┣ 📂css
+┣ 📂image 
+┃ ┣ 📜index.html  
+┃ ┣ 📜style.html   
+┣ 📂js 
+┃ ┣ 📜jquery.html  
+┃ ┣ 📜script.html 
+┣ 📂readme-image    
+┣ 📜index.html    
+┗ 📜README.md
+
+<br>
+
+---
 ## 개선 예정 사항
+- `hodu-daily`의 `img-container`가 좌우 스크롤시 움직이게 작동하는 js 구현
 - 
 
 ---
 
-## 사용된 이미지
+## 📂image
 - `Logo-HODU.svg`
   : 상단에 우측에 보이는 **'HODU' 로고** 이미지입니다.
 - `menu.svg`
