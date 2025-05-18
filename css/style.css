@@ -15,7 +15,7 @@ footer {
 }
 
 .img-container {
-  margin-left: clamp(100px, 17%, 320px);
+  padding: 0 15%;
 }
 
 .Orange-btn {
@@ -129,23 +129,31 @@ main {
 
 .hodu-daily {
   overflow: hidden;
+  align-items: center;
   gap: 40px;
 }
 
-.hodu-daily h2,
-.hodu-daily p,
-.hodu-daily span  {
-  align-items: center;
+.hodu-daily span {
   text-align: center;
 }
 
 .hodu-daily p{
   font-size: 48px;
-  font-weight: 700;
-  color: #D97652;
 }
 
-.orange-text {
+@media (min-width: 800px) and (max-width: 1400px) {
+  .hodu-daily {
+    align-items: unset;
+  }
+
+  .hodu-daily p,
+  .hodu-daily span {
+    text-align: center;
+  }
+}
+
+.orange-text,
+.hodu-daily p {
   color: #D97652;
   font-weight: 700;
 }
@@ -154,6 +162,9 @@ main {
   margin-top: 44px;
   display: flex;
   gap: clamp(20px, 4vw, 100px);
+
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .img-container li img{
@@ -382,7 +393,7 @@ footer > nav li a {
   }
 
   .img-container {
-      margin-left: clamp(32px, 5%, 50px);
+      padding: 0 clamp(32px, 5%, 50px);
   }
 
 
@@ -463,10 +474,16 @@ footer > nav li a {
   .hodu-daily {
     gap: 30px;
     width: 100%;
+    align-items: unset;
   }
 
   .hodu-daily p{
     font-size: 24px;
+  }
+
+  .hodu-daily p,
+  .hodu-daily span {
+    text-align: center;
   }
 
   .img-container li img{
