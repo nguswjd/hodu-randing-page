@@ -387,7 +387,7 @@ footer > nav li a {
 
   header section,
   .hodu-intro,
-  .hodu-daily > *:not(.img-container),
+  .hodu-daily:not(.img-container),
   .hodu-more-ad,
   .subscribe-content,
   footer {
