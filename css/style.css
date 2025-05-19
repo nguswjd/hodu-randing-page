@@ -66,7 +66,7 @@ header {
 .header-menu {
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 20;
 
   background-color: #F2E9D8;
   flex-direction: row;
@@ -142,7 +142,6 @@ main {
 }
 
 .hodu-daily {
-  overflow: hidden;
   align-items: center;
   gap: 40px;
 }
@@ -395,21 +394,8 @@ footer > nav li a {
     letter-spacing: 0;
   }
 
-  header section{
-    margin: 0 clamp(20px, 5%, 50px);
-  }
-
-  header section,
-  .hodu-intro,
-  .hodu-daily:not(.img-container),
-  .hodu-more-ad,
-  .subscribe-content,
-  footer {
-      margin: 0 clamp(32px, 5%, 50px);
-  }
-
   .img-container {
-      padding: 0 clamp(32px, 5%, 50px);
+    padding: 0 clamp(32px, 5%, 50px);
   }
 
 
@@ -422,9 +408,22 @@ footer > nav li a {
     display: block;
   }
 
+  header {
+    margin: 0;
+  }
+
   .header-menu {
+    width: 100vw;
     padding: 15px 0;
     margin-bottom: 40px;
+  }
+
+  .header-menu h1 {
+    padding: 0 clamp(32px, 5%, 50px);
+  }
+
+  .header-menu nav {
+    padding: 0 clamp(32px, 5%, 50px);
   }
 
   .header-menu nav ul li:not(.mobile-tab-menu) {
@@ -439,6 +438,7 @@ footer > nav li a {
     flex-direction: column;
     text-align: center;
     gap: 30px;
+    padding-top: 116px;
   }
 
   .description-wrap img {
