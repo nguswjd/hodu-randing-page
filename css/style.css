@@ -370,7 +370,7 @@ footer > nav li a {
   font-size: 14px;
 }
 
-@media (min-width: 800px) and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1400px) {
   .hodu-daily {
     align-items: unset;
   }
@@ -381,7 +381,7 @@ footer > nav li a {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .line-break {
     display: inline-block;
   }
