@@ -5,7 +5,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-header section,
+header section:not(.header-menu),
 .hodu-intro,
 .hodu-daily > *:not(.img-container),
 .hodu-more-ad,
@@ -59,11 +59,29 @@ main,
   flex-direction: column;
 }
 
+header {
+  margin-top: 100px;
+}
+
 .header-menu {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  background-color: #F2E9D8;
   flex-direction: row;
 
+  width: 100%;
   padding: 25px 0;
   margin-bottom: 32px;
+}
+
+.header-menu h1 {
+  padding-left: 15%;
+}
+
+.header-menu nav {
+  padding-right: 15%;
 }
 
 .header-menu nav ul {
@@ -79,10 +97,6 @@ main,
 
 .description-wrap img {
   width: clamp(260px, 40%, 415px);
-}
-
-.page-description {
-  gap: clamp(20px, 3vw ,40px);
 }
 
 .page-description p,
