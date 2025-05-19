@@ -208,6 +208,7 @@ main {
 .subscribe-content > span {
   grid-column: 1;
   grid-row: 2;
+  color: #F2E9D8;
 }
 
 .subscribe-content form {
@@ -532,6 +533,10 @@ footer > nav li a {
   .subscribe-content h2,
   .subscribe-content h2 > span {
     font-size: 24px;
+  }
+
+  .subscribe-content > span {
+    color: #F2E9D8;
   }
 
   .input-wrap {
