@@ -217,7 +217,7 @@ main {
 }
 
 .subscribe-content h2,
-.subscribe-content span {
+.subscribe-content h2 span{
   color: #fff;
 }
 
