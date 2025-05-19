@@ -141,17 +141,6 @@ main {
   font-size: 48px;
 }
 
-@media (min-width: 800px) and (max-width: 1400px) {
-  .hodu-daily {
-    align-items: unset;
-  }
-
-  .hodu-daily p,
-  .hodu-daily span {
-    text-align: center;
-  }
-}
-
 .orange-text,
 .hodu-daily p {
   color: #D97652;
@@ -367,6 +356,17 @@ footer > nav li a {
   font-size: 14px;
 }
 
+@media (min-width: 800px) and (max-width: 1400px) {
+  .hodu-daily {
+    align-items: unset;
+  }
+
+  .hodu-daily p,
+  .hodu-daily span {
+    text-align: center;
+  }
+}
+
 @media (max-width: 800px) {
   .line-break {
     display: inline-block;
@@ -516,7 +516,7 @@ footer > nav li a {
   .subscribe-wrap {
     margin-bottom: 200px;
   }
-
+  
   .subscribe-content {
     border-radius: 18px;
     padding: 36px 32px 30px 32px;
@@ -665,7 +665,6 @@ footer > nav li a {
     position: fixed;
     top: 0;
     right: 0;
-    transition: opacity 0.3s ease;
     
     display: flex;
     justify-content: flex-end;
